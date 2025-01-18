@@ -1,0 +1,218 @@
+
+.container{
+    padding: 20px 70px;
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.place-container{
+    margin-top: 15px;
+}
+
+.place-container .place{
+    width: 250px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 200;
+}
+
+.container .others{
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    background: rgba(24,24,27, 0.6);
+    padding:30px;
+    border-radius: 10px;
+    margin: 70px 0;
+    border: 1px solid #eee;
+}
+
+.container .others .weather-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-container{
+    margin-top: 30px;
+    height: 40px;
+    width: 200px;
+    background: #ebfffc;
+    border-radius: 40px;
+    display: flex;
+}
+.search-container input{
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 20px;
+    background: #ebfffc;
+    color: #626262;
+    font-size: 18px;
+}
+.search-container img{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.date-container{
+    font-weight: 100;
+    width: 300px;
+}
+.date-container .time{
+    font-size: 70px;
+}
+
+.date-container .date{
+    font-size: 30px;
+}
+
+.future-forecast{
+    background: rgba(24,24,27,0.7);
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    color:white;
+    align-items: center;
+    justify-content: center;
+}
+
+.future-forecast .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    border: 3px solid #eee;
+    margin-right: 20px;
+    padding:20px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+}
+
+.future-forecast .today .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.future-forecast .today .temp{
+    text-align: center;
+    font-size: 16px;
+    padding-top: 15px;
+}
+.future-forecast .today img{
+    width:130px
+}
+
+.future-forecast .weather-forecast{
+    display: flex;
+    gap: 10px;
+}
+
+.weather-forecast .weather-forecast-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+}
+
+.weather-forecast .weather-forecast-item .day{
+    padding: 5px 15px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.weather-forecast .weather-forecast-item .temp{
+    font-weight: 200;
+    font-size: 14px;
+}
+.weather-forecast-item .w-icon{
+    width: 80px;
+}
+
+@media (max-width:1024px){
+    .container{
+        padding: 10px 50px;
+    }
+    
+    .place-container{
+        margin-top: 10px;
+    }
+    
+    .place-container .place{
+        font-size: 40px;
+    }
+    .container .others{
+        padding:15px;
+        margin: 70px 15px;
+    }
+    
+    .container .others .weather-item{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .search-container{
+        margin-top: 15px;
+        width: 180px;
+    }
+    .search-container input{
+        width: 130px;
+        font-size: 14px;
+    }
+    .date-container{
+        width: 200px;
+    }
+    .date-container .time{
+        font-size: 40px;
+    }
+    
+    .date-container .date{
+        font-size: 20px;
+    }
+
+    .future-forecast{
+        padding: 10px 15px;
+    }
+    
+    .future-forecast .today{
+        margin-right: 10px;
+        padding:10px;
+    }
+
+    .future-forecast .today .temp{
+        font-size: 14px;
+    }
+    .future-forecast .today img{
+        width:80px
+    }
+    
+    .future-forecast .weather-forecast{
+        gap: 0px;
+    }
+    
+    .weather-forecast .weather-forecast-item .day{
+        padding: 5px 5px;
+        font-size: 14px;
+    }
+    
+    .weather-forecast .weather-forecast-item .temp{
+        font-size: 12px;
+    }
+    .weather-forecast-item .w-icon{
+        width: 60px;
+    }
+}
