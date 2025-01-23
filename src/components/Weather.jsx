@@ -86,6 +86,11 @@ const Weather = () => {
             const forecastResponse = await fetch(forecastUrl);
             const forecastData = await forecastResponse.json();
 
+            //example for below function why arr.finindex ?bcz it returns 4 times on same date
+             // July 9, 2021 12:00 AM
+             // July 9, 2021 3:00 AM
+             // July 10, 2021 12:00 AM
+
             const dailyForecasts = forecastData.list.filter((item, index, arr) => {
                 const currentDate = new Date(item.dt * 1000).getDate();
                 return index === arr.findIndex(forecast => new Date(forecast.dt * 1000).getDate() === currentDate);
